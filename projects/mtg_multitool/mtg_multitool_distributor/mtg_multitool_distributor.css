@@ -1,0 +1,36 @@
+/*MTG Multitool distributor*/
+
+.h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+.start_link_button_div {
+    padding-top: 45vh;
+}
+
+.body {
+    background-image: url('./mtg_multitool_distributor_imgs/lotus-cobra_znr_1920x1080_wallpaper.min.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.start_link_button_div button {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background-color: #008582;
+    border-color: #008582;
+    width: 250px;
+    height: 90px;
+    font-size: 30px;
+}
+
+.start_link_button_div button:hover {
+    background-color: #d78118;
+    border-color: #d78118;
+}
