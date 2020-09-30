@@ -10,6 +10,8 @@
     width: 195px;
     position: sticky;
     top: 0;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .button_main {
@@ -28,7 +30,7 @@
     background-position: center;
 }
 
-.button_p:hover {
+.button_main:hover {
     background-color: #AF3C30;
     border-color: #AF3C30;
 }

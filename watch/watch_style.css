@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300,500");
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.body {
+    width: 100vw;
+    height: 10vh;
+    display: -webkit-box;
+    -webkit-box-pack: flex-end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+}
+
+.clock {
+    top: 20px;
+    right: 60px;
+    position: absolute;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-flow: column wrap;
+    width: 280px;
+    height: 100px;
+}
+
+.block {
+    width: calc(100% / 12);
+    height: 20%;
+    color: #474747;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.block:not(:nth-child(n+16)):nth-child(n+11),
+.block:not(:nth-child(n+46)):nth-child(n+41) {
+    margin-right: 10px;
+}
+
+.block:not(:nth-child(n+31)):nth-child(n+26) {
+    margin-right: 20px;
+}
+
+.block:before {
+    content: attr(data-num);
+    position: relative;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+}
+
+.block:nth-child(-n+10):before {
+    content: "0" attr(data-num);
+}
+
+.block.active:before {
+    color: #5af035;
+    font-weight: 500;
+    font: bold;
+    background-color: #0B15D4;
+    opacity: 0.5;
+}
+
+.block.second:before {
+    color: #EBCA00;
+}
+
+.divider {
+    position: absolute;
+    width: 2px;
+    background-color: #5af035;
+    height: 60%;
+    top: 20%;
+    left: calc(50% + 19px);
+}
