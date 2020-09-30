@@ -1,0 +1,119 @@
+.logo {
+    width: 225px;
+
+}
+
+.img_margin {
+    margin-bottom: 30px;
+}
+
+
+.adresse2 {
+    margin-left: 50%;
+    margin-bottom: 100px;
+}
+
+.singing_margin {
+    margin-bottom: 50px;
+}
+
+.unterschrift {
+    width: 80px;
+    animation-name: signature;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.res {
+    border-bottom: 1px double #333333;
+}
+
+table,
+th,
+td {
+    border: 1px solid #333333;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: gray;
+}
+
+table {
+    width: 100%;
+    border-color: white;
+}
+
+.res {
+    border-bottom: double;
+}
+
+body {
+    font-family:   'Open Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.vielendank {
+    margin-top: 50px;Polacode
+}
+
+h2 {
+    font-size: 16px;
+}
+
+li {
+    margin-left: -20px;
+}
+
+.td_ignore {
+    border: none;
+}
+
+p {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.spining_div:hover {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes example {
+    33% {
+        color: red;
+    }
+
+    66% {
+        color: blue;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes signature {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

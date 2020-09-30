@@ -1,0 +1,39 @@
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+
+    /** Für Aufgabe 1 kannst du von hier... **/
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    /** ...bis hier CSS-Deklarationen hinzufügen. **/
+}
+
+.flex-item {
+    background: tomato;
+    margin: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    flex-basis: ;
+}
+
+/** Für Aufgabe 2 kannst du von hier... **/
+
+.item1{
+    order: 1;
+}
+.item2{
+    order: 2;
+}
+/** ...bis hier CSS-Deklarationen hinzufügen. **/

@@ -1,0 +1,21 @@
+button{
+    background-color: white;
+}
+.flex-container{
+    display: flex;
+}
+input{
+    size: 500px;
+} 
+html{
+    background-image: url('../bilder/background2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.form-group{
+    color: white;
+}

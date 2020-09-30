@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="grids.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header  centered_text">Header <button class="gridgapbutton" onclick="gridgapevent()">gridgap</button></header>
+        <nav class="nav     centered_text">Navigation</nav>
+        <nav class="sub_nav centered_text">Sub- Navigation</nav>
+        <main class="content centered_text">Content</main>
+        <aside class="sidebar centered_text">Sidebar</aside>
+        <footer class="footer  centered_text">Footer</footer>
+    </div>
+    <button class="back_button_centered" onclick="window.location.href = '../start.html';">Start</button>
+    <div id="gridgap"></div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var x = 1;
+
+    function gridgapevent() {
+        if (x == 1) {
+            gridgapeventja();
+            x = 2;
+        } else if (x == 2) {
+            gridgapeventnein();
+            x = 1;
+        }
+    }
+
+    function gridgapeventja() {
+        document.getElementById("gridgap").innerHTML = '<style>.container{grid-gap: 80px;}</style>';
+    }
+
+    function gridgapeventnein() {
+        document.getElementById("gridgap").innerHTML = "";
+    }
+</script>
+
+</html>

@@ -1,0 +1,120 @@
+.back_button{
+background-color:#f30000;
+border: 1px solid #f30000;
+color: white;
+position: absolute;
+}
+
+.back_button_centered{
+    background-color:#f30000;
+    border: 1px solid #f30000;
+    color: white;
+    margin: auto;
+    color: white;
+    height: 30px;
+    width: 550px;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+
+}
+
+.white_p{
+    color: white;
+}
+
+.test_p {
+    color: #0fc45b;   
+}
+
+.test_background{
+    background-image: url('./bilder/133455.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.a1_background{
+    background-image: url('./bilder/maxresfddsefault.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.link {
+    color: #2425F5;
+}
+
+
+.task2_a{
+    font-size: 50px;
+}
+
+.start_h1 {
+    font-size: 80px;
+    margin: 30px;
+    text-align: center;
+    color: white;
+}
+
+.start_link_button_div{
+   display: flex;
+   flex-direction: column;
+}
+
+.start_link_button_div button {
+    background-color: #0085BB;
+    border: 1px solid #0086bb;
+    color: white;
+    height: 100px;
+    width: 550px;
+    text-decoration: none;
+    font-size: 33px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.backgrounded{
+    background-image: url('./bilder/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+    .start_link_button_div button {
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    .start_link_button_div{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .back_button_centered{
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .start_link_button_div button {
+        height: 100px;
+        width: 90%;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    .start_link_button_div{
+        margin: 0%;
+        padding: 0%;
+    }
+}

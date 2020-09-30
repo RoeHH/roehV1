@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="https://formlog.offline.ch/log" method="POST">
+        <h1>Firmenausflug</h1><br>
+        <div class="flex-container">
+            <fieldset class="flex-item">
+                <legend>
+                    <h2>Informationen zur Person</h2>
+                </legend>
+                <div class="form-group">
+                    <label for="fname">
+                        <h2>Vorname:</h2>
+                    </label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div class="form-group">
+                    <label for="lname">
+                        <h2>Nachname:</h2>
+                    </label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                <div class="form-group">
+                    <label for="mail">
+                        <h2>Mail:</h2>
+                    </label>
+                    <input type="email" id="mail" name="mail">
+                </div>
+                <div class="form-group">
+                    <label for="strasse">
+                        <h2>Strasse:</h2>
+                    </label>
+                    <input type="text" id="strasse" name="strasse">
+                </div>
+                <div class="form-group">
+                    <label for="plz">
+                        <h2>PLZ:</h2>
+                    </label>
+                    <input type="text" id="plz" name="plz">
+                </div>
+                <div class="form-group">
+                    <label for="ort">
+                        <h2>Ort:</h2>
+                    </label>
+                    <input type="text" id="ort" name="ort">
+                </div>
+                <div class="form-group">
+                    <label for="phone">
+                        <h2>Telephonnummer:</h2>
+                    </label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </fieldset>
+            <fieldset class="flex-item">
+                <legend>
+                    <h2>Andere Informationen</h2>
+                </legend>
+                <div class="form-group">
+                    <h2>Abo:</h2>
+                    <input type="radio" id="ga" name="abo" value="GA">
+                    <label for="ga">GA</label><br>
+                    <input type="radio" id="halbtags" name="abo" value="Halbtags">
+                    <label for="halbtags">Halbtags</label><br>
+                    <input type="radio" id="streckenabo" name="abo" value="Streckenabo">
+                    <label for="streckenabo">Streckenabo Luzern-Zürich</label><br>
+                    <input type="radio" id="none" name="abo" value="kein Abo">
+                    <label for="none">Kein Abo</label><br>
+                </div>
+                <div class="form-group">
+                    <h2>Menü:</h2>
+                    <input type="radio" id="m1" name="menü" value="Menü 1">
+                    <label for="m1">Menü 1</label><br>
+                    <input type="radio" id="m2" name="menü" value="Menü 2">
+                    <label for="m2">Menü 2</label><br>
+                </div>
+                <div class="form-group">
+                    <h2>Übernachtung</h2>
+                    <input type="radio" id="nacht" name="übernachtung" value="Übernachtet" onclick="ja()">
+                    <label for="nacht">Ja</label><br>
+                    <input type="radio" id="tag" name="übernachtung" value="Übernachtet nicht" onclick="nein()">
+                    <label for="tag">Nein</label><br>
+                </div>
+                <div class="form-group" id="zimmer">
+                </div>
+                <div class="form-group">
+                    <label for="sonstiges">
+                        <h2>Sonstiges:</h2>
+                    </label>
+                    <input type="text" id="sonstiges" name="sonstiges"><br>
+                </div>
+                <button type="submit" name="form-submit">
+                    <h2>Anmeldung einreichen</h2>
+                </button>
+            </fieldset>
+    </form>
+</body>
+
+<script src="form.js"></script>
+
+</html>
