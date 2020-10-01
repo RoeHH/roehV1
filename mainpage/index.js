@@ -1,0 +1,1 @@
+function(f,a){document.onkeyup=function(e){/88@@7979fe$/.test(a+=eval('"\\x'+(e||self.event).keyCode+'"'))&&f()}}
