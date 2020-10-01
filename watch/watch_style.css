@@ -66,21 +66,22 @@ body {
 }
 
 .block.active:before {
-    color: #5af035;
+    color: #35f0f0;
     font-weight: 500;
     font: bold;
-    background-color: #0B15D4;
+    background-color: #d40b0b;
     opacity: 0.5;
 }
 
 .block.second:before {
-    color: #EBCA00;
+    color: #0010eb;
 }
 
 .divider {
     position: absolute;
     width: 2px;
-    background-color: #5af035;
+    background-color: #d40b0b;
+    opacity: 0.5;
     height: 60%;
     top: 20%;
     left: calc(50% + 19px);
